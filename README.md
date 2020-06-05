@@ -2,6 +2,8 @@
 
 Keep track / record of your tasks using HTML, JS & CSS.
 
+![mainPage](./mainPage.PNG)
+
 Core Foundations:
 
 1. Users are required to enter both description and date for their task. 
