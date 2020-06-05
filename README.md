@@ -2,7 +2,21 @@
 
 Keep track / record of your tasks using HTML, JS & CSS.
 
+### Main Page:
+
 ![mainPage](./mainPage.png)
+
+### Mobile View:
+
+![mainPageMobile](./mainPageMobile.png)
+
+### On-Screen Error Examples:
+
+![error1](./error1.png)
+
+![error2](./error2.png)
+
+
 
 Core Foundations:
 
