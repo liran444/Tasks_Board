@@ -18,7 +18,7 @@ Keep track / record of your tasks using HTML, JS & CSS.
 
 
 
-Core Foundations:
+# Core Foundations:
 
 1. Users are required to enter both description and date for their task. 
    Entering a specific hour is not a requirement.
