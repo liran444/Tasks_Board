@@ -2,7 +2,7 @@
 
 Keep track / record of your tasks using HTML, JS & CSS.
 
-![mainPage](./mainPage.PNG)
+![mainPage](./mainPage.png)
 
 Core Foundations:
 
