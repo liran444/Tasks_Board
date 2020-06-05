@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liran's Task Board</title>
+
+    <!--External Bootstrap css-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!--My own css file-->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <div class="header">
+      <span>My Task Board</span>
+    </div>
+
+    <!--Form-->
+    <div class="divContainerForForm">
+      <form
+        id="taskForm"
+        onsubmit="onSubmitTaskForm(event); onSubmitClearForm()"
+      >
+        <!--Form Inputs-->
+        <div class="formDivInputs">
+          <!--Task Description Input-->
+          <input
+            type="text"
+            id="userTask"
+            class="formTaskInput form-control form-control-sm"
+            placeholder="Enter your task"
+          /><span> |</span>
+          <!--Final Date for Task Input-->
+          <input
+            type="text"
+            id="userFinalDate"
+            class="formDateInput form-control form-control-sm"
+            placeholder="YYYY/MM/DD"
+          /><span> |</span>
+          <!--Time Period for Task Input-->
+          <input
+            type="time"
+            id="userTimePeriod"
+            class="formTimeInput form-control form-control-sm"
+          />
+        </div>
+
+        <!--Error Messages Div-->
+        <div class="errorMessagesDiv">
+          <span id="errorMessagesSpan" class="noErrorPadding"></span>
+        </div>
+
+        <!--Form Buttons-->
+        <div class="formButtonsDiv">
+          <button type="submit" class="formButtonsClass btn btn-info btn-sm">
+            Submit Form
+          </button>
+          <button
+            type="reset"
+            class="formButtonsClass btn btn-warning btn-sm"
+            onclick="onResetFormClearErrors()"
+          >
+            Reset Form
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!--Div which displays all of the notes-->
+    <div id="myNotes"></div>
+
+    <!--My own JS-->
+    <script src="index.js"></script>
+  </body>
+</html>

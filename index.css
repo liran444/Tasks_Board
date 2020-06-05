@@ -1,0 +1,287 @@
+body {
+  background-image: url("./media/tile.jpg");
+  caret-color: magenta;
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe Print";
+  font-size: 46px;
+  font-weight: 900;
+  margin: 20px;
+}
+
+.divContainerForForm {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 700px;
+  height: 193px;
+  background-image: url("./media/formbg.jpg");
+  display: inline-block;
+}
+
+.formDivInputs {
+  margin-top: 19px;
+  margin-left: 75px;
+  position: relative;
+  bottom: 6px;
+}
+
+.formTaskInput {
+  display: inline-block;
+  width: 250px;
+  background: transparent;
+  border: 0;
+}
+
+.formDateInput {
+  display: inline-block;
+  width: 120px;
+  margin-left: 5px;
+  background: transparent;
+  border: 0;
+}
+
+.formTimeInput {
+  display: inline-block;
+  width: 170px;
+  margin-top: 1px;
+  background: transparent;
+  border: 0;
+}
+
+.formTimeInput:before {
+  content: "Time:";
+  margin-right: 0.5em;
+  color: #9d9d9d;
+}
+
+.errorMessagesDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 2px;
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.noErrorPadding {
+  padding: 10px;
+}
+
+.formButtonsDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 7px;
+}
+
+.formButtonsClass {
+  margin-left: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+.noteClass {
+  margin-left: 70px;
+  margin-top: 70px;
+  width: 185px;
+  height: 250px;
+  background-image: url("./media/notebg.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fadeIn {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut ease 1.8s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeOut ease 1.8s; /* Firefox < 16 */
+  -ms-animation: fadeOut ease 1.8s; /* Internet Explorer */
+  -o-animation: fadeOut ease 1.8s; /* Opera < 12.1 */
+  animation: fadeOut ease 1.8s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.taskDescriptionClass {
+  position: relative;
+  padding: 2px;
+  top: 35px;
+  left: 4%;
+  height: 160px;
+  max-width: 149px;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+#myNotes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.taskDateClass {
+  position: relative;
+  top: 40px;
+  left: 4%;
+}
+
+.taskTimeClass {
+  position: relative;
+  top: 38px;
+  left: 4%;
+}
+
+.removeButtonClass {
+  display: none;
+  position: relative;
+  left: 80%;
+  bottom: 190px;
+  background-color: Transparent;
+  border: none;
+  padding: 10px;
+  color: red;
+  outline: none;
+}
+
+.noteClass:hover .removeButtonClass {
+  display: block;
+}
+
+.errorClass {
+  background-color: rgb(179, 46, 46, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(179, 46, 46);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 123, 0);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
