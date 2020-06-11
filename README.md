@@ -45,6 +45,6 @@ Keep track / record of your tasks using HTML, JS & CSS.
    
 6. Errors: 2 validations are performed on both task's description and the task's date, in case the user entered
    no input / wrong date pattern. In case an error is found, the wrong input area is marked red and a message regarding
-   the error shows up, <b>the area will remain marked red until a valid submit or reset of the form.</b>
+   the error shows up, <b>the area will remain marked red until a complete valid submit or reset of the form.</b>
 
 7. Notes are added from left to right, newest will be shown on the left.
